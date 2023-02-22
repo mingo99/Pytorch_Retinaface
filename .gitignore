@@ -1,1 +1,12 @@
 weights/
+widerface_txt/
+results/
+coco_evaluate/
+images/
+__pycache__/
+build/
+
+*.zip
+*.so
+box_overlaps.c
+FDDB_dets.txt

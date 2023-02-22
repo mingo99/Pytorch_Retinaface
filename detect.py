@@ -83,8 +83,8 @@ if __name__ == '__main__':
     resize = 1
 
     # testing begin
-    for i in range(100):
-        image_path = "./curve/test.jpg"
+    for i in range(1):
+        image_path = "../../data/cocofb/images/train2023/COCO_train2014_000000211478.jpg"
         img_raw = cv2.imread(image_path, cv2.IMREAD_COLOR)
 
         img = np.float32(img_raw)
@@ -147,6 +147,7 @@ if __name__ == '__main__':
             for b in dets:
                 if b[4] < args.vis_thres:
                     continue
+                print(b)
                 text = "{:.4f}".format(b[4])
                 b = list(map(int, b))
                 cv2.rectangle(img_raw, (b[0], b[1]), (b[2], b[3]), (0, 0, 255), 2)
