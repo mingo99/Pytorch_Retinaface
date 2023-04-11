@@ -1,5 +1,5 @@
 run_train:
-	python ann_coco.py
+	python cocofb_face_gen.py
 
 run_val:
-	python ann_coco.py --dataset_name=val
+	python cocofb_face_gen.py
